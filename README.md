@@ -1,1 +1,0 @@
-# kyntaz.github.io
