@@ -1,6 +1,6 @@
 body {
-    font-family: 'Courier New', Courier, monospace !important;
-    width: 70%;
+    font-family: 'Courier New', Courier, monospace;
+    width: calc(100% - 60px);
     margin: auto;
 }
 
@@ -17,8 +17,24 @@ td.small {
     width: 20%;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
+}
+
+a {
+    color: blue;
 }
 
 .cols {
@@ -26,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .round {
@@ -42,4 +59,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .bold {
     font-weight: bold;
+}
+
+.margin {
+    margin: 20px;
+    width: 40%;
+}
+
+.project {
+    display: flex;
+    margin: 30px;
+}
+
+.project .description {
+    padding: 30px;
+    width: 100%;
 }
